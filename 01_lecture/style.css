@@ -1,0 +1,30 @@
+/* h1{
+    background-color: blue;
+    color: yellow;
+} */
+
+.four {
+  background-color: aqua;
+}
+
+.five {
+  background-color: yellow;
+}
+
+#Belal {
+  color: red;
+}
+
+#Sheetal {
+  color: blue;
+}
+
+#Imon:hover {
+  background-color: brown;
+  color: aqua;
+}
+
+table ,tr,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
