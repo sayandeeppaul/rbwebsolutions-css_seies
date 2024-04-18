@@ -1,29 +1,84 @@
-   
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Em vs Rem</title>
-</head>
- 
-<style>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* body{
+        color: ;
+        background-color: black;
+    } */
+
     .parent {
-        font-size: 10px;
-        /* width: 200px; */
+      font-size: 0.5rem;
+      width: 50vw;
+      height: 80vh;
+      background-color: aqua;
     }
- 
+
     .child-em {
-        font-size: 2em;
-        margin: 1.5em;
-        /* width: 5em; */
+      font-size: 3em;
+      margin: 1.5em;
+      /* width: 5em; */
     }
-</style>
- 
-<body>
+
+    .content1,
+    .content2 {
+      border: 2px solid red;
+      width: 200px;
+      text-align: justify;
+      background-color: beige;
+      padding: 15px 30px 5px;
+    }
+    
+    .content1, .content2 {
+      /* margin: 20px; */
+    }
+
+    /* .secondChild {
+        font-size: 1rem;
+    } */
+
+    .parentElem {
+      width: 50%;
+      height: 200px;
+      background-color: aqua;
+    }
+
+    .childElem {
+      width: 50%;
+      background-color: brown;
+      height: 100px;
+    }
+  </style>
+
+  <body>
     <div class="parent">
-        This is parent
-        <div class="child-em">
-            This is Child in em unit system
-        </div>
+      This is parent
+      <div class="child-em">This is Child in em unit system</div>
+      <div class="secondChild">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quo?
+      </div>
     </div>
-</body>
+
+    <!-- <div class="content1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo inventore dolorum repudiandae iure alias itaque minima eum. Quis, 
+    </div>
+    <div class="content2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo inventore dolorum repudiandae iure alias itaque minima eum. Quis,
+    </div>
+
+    <div class="parentElem">
+        <div class="childElem">
+
+        </div>
+    </div> -->
+  </body>
 </html>

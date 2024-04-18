@@ -1,14 +1,14 @@
-/* h1{
-    background-color: blue;
-    color: yellow;
-} */
+h1 {
+  background-color: blue;
+  color: yellow;
+}
 
 .four {
   background-color: aqua;
 }
 
 .five {
-  background-color: yellow;
+  background-color: pink;
 }
 
 #Belal {
@@ -24,7 +24,30 @@
   color: aqua;
 }
 
-table ,tr,td{
-    border: 2px solid black;
-    border-collapse: collapse;
+/* unvisited link */
+/* a:link {
+  color: #FF0000;
+} */
+
+/* visited link */
+/* a:visited {
+  color: #00FF00;
+} */
+
+/* mouse over link */
+/* a:hover {
+  color: #FF00FF;
+} */
+
+/* selected link */
+/* a:active {
+  color: #0000FF;
+} */
+
+table,
+tr,
+td,
+th {
+  border: 2px solid pink;
+  border-collapse: collapse;
 }

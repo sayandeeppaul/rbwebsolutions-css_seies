@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: beige;
+  border: 2px solid red;
+}
+
+.box1 {
+  height: 100px;
+  width: 200px;
+  background-color: blue;
+  border: 2px solid black;
+  margin: 10px;
+  position: relative;
+  /* animation-name: rightMovement; */
+
+  /* how long the animation will take time to be finished  */
+  /* animation-duration: 5s;
+  animation-delay:2s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-timing-function: ease-in-out; */
+  /* animation-timing-function: cubic-bezier(0.1,0.7,1.0,0.1); */
+  /* animation-direction: alternate-reverse;
+  animation-play-state: running; */
+
+  animation: rightMovement 1s linear 2s infinite alternate;
+}
+
+@keyframes rightMovement {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: blue;
+  }
+  50% {
+    top: 0;
+    left: 225px;
+    background-color: yellow;
+  }
+  100% {
+    top: 0;
+    left: 550px;
+    background-color: red;
+  }
+}
+
+.box2 {
+  height: 100px;
+  width: 200px;
+  background-color: blue;
+  border: 2px solid black;
+  margin: 10px;
+  position: relative;
+  animation: leftMovement 1s linear 2s infinite alternate;
+}
+
+@keyframes leftMovement {
+  0% {
+    top: 450px;
+    left: 550px;
+    background-color: blue;
+  }
+  50% {
+    top: 450px;
+    left: 225px;
+    background-color: yellow;
+  }
+  100% {
+    top: 450px;
+    left: 0;
+    background-color: red;
+  }
+}
